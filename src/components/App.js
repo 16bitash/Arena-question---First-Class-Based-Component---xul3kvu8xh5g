@@ -2,14 +2,11 @@ import React from "react";
 import "../styles/App.css";
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: "John Doe",
-      enrollmentNo: "12345678",
-      age: 34,
-    };
-  }
+  state = {
+    name: "John Doe",
+    enrollmentNo: "12345678",
+    age: 34,
+  };
 
   changeAge = () => {
     this.setState({ age: this.state.age + 1 });
